@@ -1,118 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="theme-color" content="#000000"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"/>
-  <meta name="description" content="Developereva page"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <title>XasdesDev - Bio</title>
-  <link href="static/css/2.3f756516.chunk.css" rel="stylesheet">
-  <script type="text/javascript">
-    (function(m, e, t, r, i, k, a) {
-      m[i] = m[i] || function() {
-        (m[i].a = m[i].a || []).push(arguments)
-      };
-      m[i].l = 1 * new Date();
-      for (var j = 0; j < document.scripts.length; j++) {
-        if (document.scripts[j].src === r) {
-          return;
-        }
-      }
-      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(94553871, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/94553871" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XasdesNew</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-  <noscript>Включи JS чтоле еблан.</noscript>
-  <div id="root"></div>
-  <script>
-    !function(e) {
-      function r(r) {
-        for (var n, l, f = r[0], i = r[1], a = r[2], c = 0, s = []; c < f.length; c++) {
-          l = f[c], Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), o[l] = 0;
-        }
-        for (n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n]);
-        for (p && p(r); s.length;) s.shift();
-        return u.push.apply(u, a || []), t()
-      }
-      function t() {
-        for (var e, r = 0; r < u.length; r++) {
-          for (var t = u[r], n = !0, f = 1; f < t.length; f++) {
-            var i = t[f];
-            0 !== o[i] && (n = !1)
-          }
-          n && (u.splice(r--, 1), e = l(l.s = t[0]))
-        }
-        return e
-      }
-      var n = {},
-        o = {
-          1: 0
-        },
-        u = [];
+    <div class="header">
+        <h1>XasdesNew</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#" class="tab-link active" data-tab="info">
+                <img src="https://img.icons8.com/?size=24&id=Hj21JM30swCm&format=png">
+                <p>&nbspИнформация</p>
+            </a>
+        
+            <a href="#" class="tab-link" data-tab="about">
+                <img src="https://img.icons8.com/?size=24&id=3ov1TV9n0L60&format=png">
+                <p>&nbspОбо мне</p>
+            </a>
+        
+            <a href="#" class="tab-link" data-tab="contacts">
+                <img src="https://img.icons8.com/?size=24&id=13731&format=png">
+                <p>&nbspКонтакты</p>
+            </a>
+        
+            <a href="#" class="tab-link" data-tab="donate">
+                <img src="https://img.icons8.com/?size=24&id=7749&format=png&color=228BE6">
+                &nbspДонат
+            </a>
+        </div>
+        <div class="mobile-buttons">
+            <a href="#" class="tab-link active" data-tab="info">
+                <img src="https://img.icons8.com/?size=24&id=Hj21JM30swCm&format=png" alt="Информация">
+                <span>Инфо</span>
+            </a>
+            <a href="#" class="tab-link" data-tab="about">
+                <img src="https://img.icons8.com/?size=24&id=3ov1TV9n0L60&format=png" alt="Опыт">
+                <span>Обо мне</span>
+            </a>
+            <a href="#" class="tab-link" data-tab="contacts">
+                <img src="https://img.icons8.com/?size=24&id=13731&format=png" alt="Контакты">
+                <span>Контакты</span>
+            </a>
+            <a href="#" class="tab-link" data-tab="donate">
+                <img src="https://img.icons8.com/?size=24&id=7749&format=png&color=228BE6" alt="Донат">
+                <span>Донат</span>
+            </a>
+        </div>
 
-      function l(r) {
-        if (n[r]) return n[r].exports;
-        var t = n[r] = {
-          i: r,
-          l: !1,
-          exports: {}
-        };
-        return e[r].call(t.exports, t, t.exports, l), t.l = !0, t.exports
-      }
-      l.m = e, l.c = n, l.d = function(e, r, t) {
-        l.o(e, r) || Object.defineProperty(e, r, {
-          enumerable: !0,
-          get: t
-        })
-      }, l.r = function(e) {
-        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
-          value: "Module"
-        }), Object.defineProperty(e, "__esModule", {
-          value: !0
-        })
-      }, l.t = function(e, r) {
-        if (1 & r && (e = l(e)), 8 & r) return e;
-        if (4 & r && "object" == typeof e && e && e.__esModule) return e;
-        var t = Object.create(null);
-        if (l.r(t), Object.defineProperty(t, "default", {
-          enumerable: !0,
-          value: e
-        }), 2 & r && "string" != typeof e) for (var n in e) l.d(t, n, function(r) {
-          return e[r]
-        }.bind(null, n));
-        return t
-      }, l.n = function(e) {
-        var r = e && e.__esModule ? function() {
-          return e.default
-        } : function() {
-          return e
-        };
-        return l.d(r, "a", r), r
-      }, l.o = function(e, r) {
-        return Object.prototype.hasOwnProperty.call(e, r)
-      }, l.p = "/";
-      var f = this.webpackJsonpd4n13l3k00 = this.webpackJsonpd4n13l3k00 || [],
-        i = f.push.bind(f);
-      f.push = r, f = f.slice();
-      for (var a = 0; a < f.length; a++) r(f[a]);
-      var p = i;
-      t()
-    }([])
-  </script>
-  <script src="static/js/2.af0d01cd.chunk.js"></script>
-  <script src="static/js/main.2024_0.chunk.js"></script>
+        <div class="main-content">
+            <div class="card">
+                <div id="info" class="tab-content active">
+                    <h2>Информация</h2>
+                    <div class="info-content">
+                        <span id="typing" class="typing-effect"></span>
+                    </div>
+                </div>
+                <div id="about" class="tab-content">
+                    <h2>Обо мне</h2>
+                    <div class="about-content">
+                        <div class="profile-info">
+                            <div class="skill-card">
+                                <div class="skill-icon">🐍</div>
+                                <h3>Python Developer</h3>
+                                <p>3 года опыта разработки</p>
+                            </div>
+                            
+                            <div class="specialization">
+                                <h3>Специализация</h3>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Flask</span>
+                                    <span class="tech-badge">Aiogram</span>
+                                    <span class="tech-badge">SQL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="learning">
+                                <h3>Изучаю</h3>
+                                <div class="tech-stack">
+                                    <span class="tech-badge csharp">C#</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contacts" class="tab-content">
+                    <h2>Контакты</h2>
+                    <div class="contacts-content">
+                        <div class="social-links">
+                            <a href="https://github.com/XasdesNew" class="social-link github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://t.me/XasdesNew" class="social-link telegram">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="https://kwork.ru/user/XasdesNew" class="social-link kwork">
+                                <img src="https://cdn-edge.kwork.ru/images/favicon/favicon-32x32.png" alt="Kwork">
+                                <span>Kwork</span>
+                            </a>
+                            <a href="https://t.me/quantomclient" class="social-link project">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Мой проект</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="donate" class="tab-content">
+                    <h2>Поддержать проект</h2>
+                    <div class="donate-content">
+                        <div class="crypto-bot">
+                            <div class="bot-info">
+                                <i class="fas fa-robot"></i>
+                                <h3>CryptoBot</h3>
+                                <p>Скиньте копеечку кому не жалко</p>
+                            </div>
+                            <a href="https://t.me/send?start=IVP8YKmguKHl" class="donate-button">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Поддержать</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
